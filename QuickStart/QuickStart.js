@@ -23,3 +23,8 @@ function AboutPage(){
         </>
     );
 }
+
+//Adding Styles
+<img className="avatar" />
+//added CSS file
+
