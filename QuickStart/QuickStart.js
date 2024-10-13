@@ -13,3 +13,13 @@ export default function MyApp(){
         </div>
     );
 }
+
+//Writing Markup with JSX
+function AboutPage(){
+    return (
+        <>
+        <h1>About</h1>
+        <p>Hello there.<br />How do you do?</p>
+        </>
+    );
+}
