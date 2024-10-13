@@ -51,3 +51,16 @@ export default function Profile(){
         </>
     );
 }
+
+//Conditional Rendering
+let content;
+if (isLoggedIn){
+    content = <AdminPanel />;
+} else{
+    content = <LoginForm />;
+}
+return (
+    <div>
+        {content}
+    </div>
+)
