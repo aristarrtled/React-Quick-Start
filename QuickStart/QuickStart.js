@@ -89,3 +89,17 @@ export default function RenderingLists(){
     )
 }
 
+//Responding to Events
+function MyButton2() {
+    function handleClick(){
+        alert('you clicked me');
+    }
+
+    return (
+        <button onClick={handleClick}>
+            Click me
+        </button>
+    );
+}
+
+
