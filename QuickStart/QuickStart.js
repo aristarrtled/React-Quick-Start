@@ -1,14 +1,25 @@
+import {useState} from 'react';
 //Creating and Nesting Components
-function MyButton(){
+//Updating the Screen
+function MyButton() {
+    const [count, setCount] = useState(0);
+    function handleClick(){
+        alert('you clicked me');
+    }
+
     return (
-        <button>I'm a button.</button>
+        <button onClick={handleClick}>
+            Click me
+        </button>
     );
 }
 
+//Updating the Screen
 export default function MyApp(){
     return (
         <div>
-            <h1>Welcome to my app.</h1>
+            <h1>Counters that update separately.</h1>
+            <MyButton />
             <MyButton />
         </div>
     );
@@ -90,7 +101,9 @@ export default function RenderingLists(){
 }
 
 //Responding to Events
+//Updating the Screen
 function MyButton2() {
+    const [count, setCount] = useState(0);
     function handleClick(){
         alert('you clicked me');
     }
@@ -101,5 +114,4 @@ function MyButton2() {
         </button>
     );
 }
-
 
