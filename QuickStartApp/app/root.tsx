@@ -41,5 +41,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+    <body>
+      <h1>Sample React App</h1>
+      <Outlet />
+    </body>
+  );
 }
